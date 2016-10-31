@@ -86,7 +86,6 @@ describe('Consolidator', () => {
     }
     subject = new S3Consolidator(s3Config);
     s3 = new S3({
-      credentials: new Credentials(s3Config.accessKeyId, s3Config.secretAccessKey),
       region: s3Config.region,
       bucket: s3Config.bucket
     });

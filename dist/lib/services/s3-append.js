@@ -16,7 +16,6 @@ var S3Append = (function () {
         this.hasChanges = false;
         this.pendingPromises = [];
         aws_sdk_1.config.update({
-            credentials: new aws_sdk_1.Credentials(config.accessKeyId, config.secretAccessKey),
             region: config.region
         });
     }

@@ -14,8 +14,6 @@ Create an `S3Config` object to authenticate with AWS:
 ```javascript
 var S3Config = require('s3-append').S3Config;
 var config = new S3Config({
-  "accessKeyId": "<YOUR DATA>",
-  "secretAccessKey": "<YOUR DATA>",
   "region": "<YOUR DATA>",
   "bucket": "<YOUR DATA>"
 });

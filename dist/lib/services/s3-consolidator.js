@@ -9,11 +9,9 @@ var S3Consolidator = (function () {
     function S3Consolidator(config) {
         this.config = config;
         aws_sdk_1.config.update({
-            credentials: new aws_sdk_1.Credentials(config.accessKeyId, config.secretAccessKey),
             region: config.region
         });
         this.s3 = new aws_sdk_1.S3({
-            credentials: new aws_sdk_1.Credentials(config.accessKeyId, config.secretAccessKey),
             region: config.region,
             bucket: config.bucket
         });

@@ -78,7 +78,6 @@ describe('Consolidator', function () {
         }
         subject = new s3_consolidator_1.default(s3Config);
         s3 = new aws_sdk_1.S3({
-            credentials: new aws_sdk_1.Credentials(s3Config.accessKeyId, s3Config.secretAccessKey),
             region: s3Config.region,
             bucket: s3Config.bucket
         });
