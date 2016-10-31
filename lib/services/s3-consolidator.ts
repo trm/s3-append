@@ -13,11 +13,9 @@ export default class S3Consolidator {
 
   constructor(public config: S3Config) {
     awsConfig.update({
-      credentials: new Credentials(config.accessKeyId, config.secretAccessKey),
       region: config.region
     });
     this.s3 = new S3({
-      credentials: new Credentials(config.accessKeyId, config.secretAccessKey),
       region: config.region,
       bucket: config.bucket
     });

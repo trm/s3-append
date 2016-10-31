@@ -37,3 +37,5 @@ aws-config.json
 
 # We use Typescript, not JS
 typings
+
+.idea

@@ -19,7 +19,6 @@ export default class S3Append {
     public format: Format = Format.Text,
     public acl: string = 'private') {
     awsConfig.update({
-      credentials: new Credentials(config.accessKeyId, config.secretAccessKey),
       region: config.region
     });
   }
